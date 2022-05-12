@@ -79,7 +79,7 @@ img {
   align-items: center;
 }
 
-.logo {
+.nav__logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
