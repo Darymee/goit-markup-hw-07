@@ -112,7 +112,7 @@ body {
   padding: 40px;
 }
 
-.modal-close-btn {
+.modal__btn-close {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,11 +127,11 @@ body {
   fill: #000000;
   transition: fill var(--transition-duration) var(--transition-timing);
 }
-.modal-close-btn:hover, .modal-close-btn:focus {
+.modal__btn-close:hover, .modal__btn-close:focus {
   fill: var(--accent-color);
 }
 
-.modal-title {
+.modal__title {
   text-align: center;
   margin-bottom: 12px;
   font-weight: 700;
@@ -142,19 +142,19 @@ body {
   color: var(--main-title-color);
 }
 
-.modal-form-list {
+.modal-form__list {
   margin-bottom: 20px;
 }
 
-.modal-form-item {
+.modal-form__item {
   display: flex;
   flex-direction: column;
 }
-.modal-form-item:not(:last-child) {
+.modal-form__item:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.modal-label {
+.modal-form__label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.167;
@@ -162,11 +162,11 @@ body {
   color: var(--main-text-color);
 }
 
-.modal-input-wrap {
+.input-wrap {
   position: relative;
 }
 
-.modal-input {
+.input-wrap__input {
   height: 40px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -177,11 +177,11 @@ body {
   fill: var(--main-title-color);
   transition: border-color var(--transition-duration) var(--transition-timing);
 }
-.modal-input:hover, .modal-input:focus {
+.input-wrap__input:hover, .input-wrap__input:focus {
   border-color: var(--accent-color);
 }
 
-.modal-textarea {
+.modal-form__textarea {
   width: 448px;
   min-height: 120px;
   resize: none;
@@ -193,30 +193,30 @@ body {
   transition: border-color var(--transition-duration) var(--transition-timing);
   fill: var(--main-title-color);
 }
-.modal-textarea:hover, .modal-textarea:focus {
+.modal-form__textarea:hover, .modal-form__textarea:focus {
   border-color: var(--accent-color);
 }
-.modal-textarea::placeholder {
+.modal-form__textarea::placeholder {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-svg {
+.input-wrap__icon {
   fill: var(--main-title-color);
   position: absolute;
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
 }
-.modal-input + .modal-svg {
+.input-wrap__input + .input-wrap__icon {
   transition: fill var(--transition-duration) var(--transition-timing);
 }
-.modal-input:hover + .modal-svg {
+.input-wrap__input:hover + .input-wrap__icon {
   fill: var(--accent-color);
 }
-.modal-input:focus + .modal-svg {
+.input-wrap__input:focus + .input-wrap__icon {
   fill: var(--accent-color);
 }
 
@@ -229,7 +229,7 @@ body {
   margin-right: auto;
 }
 
-.agreement-text {
+.agreement-form__label {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -237,7 +237,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-.agreement-text span {
+.agreement-form__label span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,28 +247,28 @@ body {
   border-radius: 3px;
   margin-right: 9px;
 }
-.modal-agreement + .agreement-text span {
+.agreement-form__input + .agreement-form__label span {
   transition: border-color var(--transition-duration) var(--transition-timing);
 }
-.modal-agreement:checked + .agreement-text span {
+.agreement-form__input:checked + .agreement-form__label span {
   background-color: var(--accent-color);
   border: none;
 }
-.modal-agreement:hover + .agreement-text span {
+.agreement-form__input:hover + .agreement-form__label span {
   border-color: var(--accent-color);
 }
-.modal-agreement:focus + .agreement-text span {
+.agreement-form__input:focus + .agreement-form__label span {
   border-color: var(--accent-color);
 }
 
-.agreement-svg {
+.agreement-form__icon {
   fill: transparent;
 }
-.modal-agreement:checked + .agreement-text .agreement-svg {
+.agreement-form__input:checked + .agreement-form__label .agreement-form__icon {
   fill: var(--hero-title-color);
 }
 
-.modal-btn {
+.modal-form__btn {
   display: flex;
   align-items: center;
   min-width: 200px;
@@ -285,11 +285,11 @@ body {
   background-color: var(--accent-color);
   transition: box-shadow var(--transition-duration) var(--transition-timing);
 }
-.modal-btn:hover, .modal-btn:focus {
+.modal-form__btn:hover, .modal-form__btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.agreement-link {
+.agreement-form__link {
   color: var(--accent-color);
 }
 
