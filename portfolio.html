@@ -15,7 +15,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Портфолио</title>
   </head>
   <body>
@@ -308,14 +309,15 @@
       </section>
     </main>
     <!-- Подвал сайта -->
+    <!-- Подвал сайта -->
     <footer class="footer">
       <div class="container blocks">
         <div class="footer-contacts footer__footer-contacts">
           <a href="./index.html" class="logo footer-contacts__logo link"
-            >Web<span class="logo__text logo__text--light">Studio</span></a
+            >Web<span class="logo-text logo-text--light">Studio</span></a
           >
           <address class="footer-address">
-            <ul class="address-list footer-address__address-list list">
+            <ul class="address-list list">
               <li class="address-list__item">
                 <a
                   href="https://goo.gl/maps/TXbuBhdWPS78tGni8"
@@ -345,13 +347,13 @@
         </div>
         <div class="footer-social footer__footer-social">
           <h2 class="footer-social__title">Присоединяйтесь</h2>
-          <ul class="soc-list footer-social__soc-list list">
+          <ul class="soc-list list">
             <li class="soc-list__item">
               <a
                 href="Instagram.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                class="soc-list__link"
+                class="soc-list__link link"
               >
                 <svg class="soc-list__icon" width="20" height="20">
                   <use
@@ -395,22 +397,22 @@
             </li>
           </ul>
         </div>
-        <div class="footer-follow">
-          <p class="footer-follow__text">Подпишитесь на рассылку</p>
-          <form class="follow-form footer-follow__follow-form">
-            <div class="follow-form__field">
-              <label for="follow" class="follow-form__label"></label>
+        <div class="follow">
+          <p class="follow__text">Подпишитесь на рассылку</p>
+          <form class="form follow__form">
+            <div class="form__field">
+              <label for="follow" class="form__label"></label>
               <input
                 type="email"
                 name="email"
                 id="follow"
                 placeholder="E-mail"
-                class="follow-form__input"
+                class="form__input"
                 minlength="5"
                 required
               />
             </div>
-            <button type="submit" class="follow-btn btn">
+            <button type="submit" class="follow-btn form__follow-btn btn">
               Подписаться
               <svg class="follow-btn__icon" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-btn-follow"></use>
