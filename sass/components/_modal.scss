@@ -37,7 +37,8 @@
   padding: 40px;
 }
 
-.modal__btn-close {
+.btn-close {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +74,7 @@
 }
 
 .modal-form__list {
+  list-style: none;
   margin-bottom: 20px;
 }
 
@@ -207,6 +209,7 @@
 }
 
 .modal-form__btn {
+  cursor: pointer;
   display: flex;
   align-items: center;
 

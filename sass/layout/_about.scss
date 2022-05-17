@@ -1,22 +1,9 @@
 .about {
-  padding-top: 0;
-}
-
-.about__title {
-  margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-title-color);
-}
-
-.about-list {
   display: flex;
+  list-style: none;
 }
 
-.about-list__item {
+.about__item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
 
@@ -28,7 +15,7 @@
   }
 }
 
-.about-list__overlay-text {
+.about__overlay-text {
   position: absolute;
   display: flex;
   align-items: center;

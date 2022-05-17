@@ -25,11 +25,16 @@
   margin-right: 70px;
 }
 
+.address-list {
+  list-style: none;
+}
+
 .address-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
 .address-list__link {
+  text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -65,11 +70,13 @@
 .soc-list {
   display: flex;
   justify-content: center;
+  list-style: none;
 }
 .soc-list__item:not(:last-child) {
   margin-right: 10px;
 }
 .soc-list__link {
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +96,7 @@
   }
 }
 
-.follow__form {
+.form {
   display: flex;
 }
 
@@ -132,7 +139,8 @@
   }
 }
 
-.form__follow-btn {
+.follow-btn {
+  cursor: pointer;
   display: flex;
   text-align: center;
   align-items: center;
