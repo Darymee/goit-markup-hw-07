@@ -12,6 +12,13 @@
   padding-top: 0;
 }
 
+.section--is-hidden {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .section--another-background {
   background-color: var(--team-section-bgc);
 }
