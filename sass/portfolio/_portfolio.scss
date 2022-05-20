@@ -13,12 +13,14 @@
 }
 
 .portfolio__filter-list {
+  list-style: none;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
 .portfolio-list {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
